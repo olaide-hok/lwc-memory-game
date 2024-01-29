@@ -1,0 +1,15 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-card title="lightning tree grid Demo">
+    <div class="slds-var-p-around_medium">
+      <template lwc:if={gridData}>
+        <lightning-tree-grid
+          hide-checkbox-column
+          columns={gridColumns}
+          data={gridData}
+          key-field="Name"
+        ></lightning-tree-grid>
+      </template>
+    </div>
+  </lightning-card>
+</template>
